@@ -8,6 +8,8 @@ build
 
 /app/node_modules
 
+.env
+
 # misc
 .DS_Store
 .env.local

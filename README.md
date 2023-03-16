@@ -2,8 +2,31 @@
 **PROJECT: Decentralized Star Notary Service Project** - For this project, you will create a DApp by adding functionality with your smart contract and deploy it on the public testnet.
 
 ### ToDo
-This Starter Code has already implemented the functionalities you implemented in the StarNotary (Version 2) exercise, and have comments in all the files you need to implement your tasks.
 
+- ✅ Task 1
+  - Added Contract Name and Symbol.
+  - Added `lookUptokenIdToStarInfo` function to contract.
+  - Added `exchangeStars` function to contract.
+  - Added `transferStar` function to contract.
+- ✅ Task 2
+  - Added test to verify contract name and symbol.
+  - Added test to verify `lookUptokenIdToStarInfo` function in contract.
+  - Added test to verify `exchangeStars` function in contract.
+  - Added test to verify `transferStar` function in contract.
+- ✅ Task 3
+  - Added goerli and sepolia configurations to access the testnet via Infura.
+  - Deployed StarNotary contract to both local and testnet networks.
+- ✅ Task 4
+  - Modified the frontend to lookup a star using the contract function `lookUptokenIdToStarInfo` deployed on the network.
+
+
+### Deployed Contract Address and Network, [StarNotary Contract](https://sepolia.etherscan.io/address/0x0718dCdFa9D6CE54F159a7fb5A9BD0D061F1CD9f)
+
+```
+Network:  Sepolia
+EtherScan Address: https://sepolia.etherscan.io/address/0x0718dCdFa9D6CE54F159a7fb5A9BD0D061F1CD9f
+Contract Address: 0x0718dCdFa9D6CE54F159a7fb5A9BD0D061F1CD9f
+```
 
 
 ### Dependencies
@@ -24,7 +47,7 @@ npm uninstall -g truffle
 # Install
 npm install -g truffle
 # Specify a particular version
-npm install -g truffle@5.0.2
+npm install -g truffle@5.7.6
 # Verify the version
 truffle version
 ```
@@ -38,10 +61,9 @@ truffle version
 
 4. **Other mandatory packages**:
 ```bash
-cd app
 # install packages
-npm install --save  openzeppelin-solidity@2.3
-npm install --save  truffle-hdwallet-provider@1.0.17
+npm install --save  @openzeppelin/contract@4.8.2
+npm install --save  @truffle/hdwallet-provider@2.1.8
 npm install webpack-dev-server -g
 npm install web3
 ```
@@ -94,6 +116,8 @@ When you will add a new Rinkeyby Test Network in your Metamask client, you will 
 | Network Name | New RPC URL | Chain ID |
 |---|---|---|
 |Private Network 1|`http://127.0.0.1:9545/`|1337 |
+|Ganache GUI Network|`http://127.0.0.1:7545/`|5777 |
+|Sepolia |`https://sepolia.infura.io/v3/${PROJECT_ID}`|11155111 |
 
 The chain ID above can be fetched by:
 ```bash
