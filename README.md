@@ -25,6 +25,9 @@
 ```
 Network:  Sepolia
 EtherScan Address: https://sepolia.etherscan.io/address/0x0718dCdFa9D6CE54F159a7fb5A9BD0D061F1CD9f
+--------
+Contract Symbol: STRN
+Contract Name: Star Note
 Contract Address: 0x0718dCdFa9D6CE54F159a7fb5A9BD0D061F1CD9f
 ```
 
